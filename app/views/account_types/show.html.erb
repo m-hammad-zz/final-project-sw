@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @account_type.name %>
+</p>
+
+<p>
+  <strong>Lhs attr:</strong>
+  <%= @account_type.lhs_attr %>
+</p>
+
+<p>
+  <strong>Rhs attr:</strong>
+  <%= @account_type.rhs_attr %>
+</p>
+
+<p>
+  <strong>Plus attr:</strong>
+  <%= @account_type.plus_attr %>
+</p>
+
+<p>
+  <strong>Minus attr:</strong>
+  <%= @account_type.minus_attr %>
+</p>
+
+<%= link_to 'Edit', edit_account_type_path(@account_type) %> |
+<%= link_to 'Back', account_types_path %>
