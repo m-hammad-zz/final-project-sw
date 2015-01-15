@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :transactions
+
   resources :accounts
 
   resources :account_types
