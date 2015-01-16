@@ -1,0 +1,29 @@
+<h1>Welcome XXXXXXX</h1>
+
+<p><strong>Based on your role as a <font color="#dc143c">manager</font>, this is your dashboard:</strong></p>
+<table>
+  <tbody>
+      <tr>
+        <td><%= image_tag('manager_dashboard/view_txn.png', size: '70x70') %><br><br></td>
+        <td><strong><%= link_to 'View Transactions History', transactions_path %></strong><br><br></td>
+      </tr>
+      <tr>
+        <td><%= image_tag('manager_dashboard/balance_sheet.png', size: '70x70') %><br><br></td>
+        <td><strong>Generate Balance Sheet</strong><br><br></td>
+      </tr>
+      <tr>
+        <td><%= image_tag('manager_dashboard/users.png', size: '70x70') %><br><br></td>
+        <td><strong>Create/Edit/Delete A User</strong><br><br></td>
+      </tr>
+      <tr>
+        <td><%= image_tag('manager_dashboard/accounts.png', size: '70x70') %><br><br></td>
+        <td><strong>Create/Edit/Delete An Account</strong><br><br></td>
+      </tr>
+      <tr>
+        <td><%= image_tag('manager_dashboard/types.png', size: '70x70') %><br><br></td>
+        <td><strong>Create/Edit/Delete An Account Type</strong><br><br></td>
+      </tr>
+  </tbody>
+</table>
+
+
