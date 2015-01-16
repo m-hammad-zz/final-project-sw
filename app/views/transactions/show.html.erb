@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>From acc:</strong>
-  <%= @transaction.from_acc %>
+  <strong>From account:</strong>
+  <%= @transaction.from_account.name %>
 </p>
 
 <p>
-  <strong>To acc:</strong>
-  <%= @transaction.to_acc %>
+  <strong>To account:</strong>
+  <%= @transaction.to_account.name %>
 </p>
 
 <p>
@@ -21,12 +21,12 @@
 </p>
 
 <p>
-  <strong>Desc:</strong>
+  <strong>Description:</strong>
   <%= @transaction.desc %>
 </p>
 
 <p>
-  <strong>Is to to:</strong>
+  <strong>Is it "To To" transaction?</strong>
   <%= @transaction.is_to_to %>
 </p>
 
