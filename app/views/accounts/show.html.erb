@@ -7,7 +7,7 @@
 
 <p>
   <strong>Account type:</strong>
-  <%= @account.account_type_id %>
+  <%= @account.account_type.name %>
 </p>
 
 <%= link_to 'Edit', edit_account_path(@account) %> |

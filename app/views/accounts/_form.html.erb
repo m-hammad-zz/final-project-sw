@@ -18,6 +18,10 @@
   <div class="field">
     <%= f.label :account_type_id %><br>
     <%= f.number_field :account_type_id %>
+    <br>
+    <br>
+    <%= f.label :account_type %><br>
+    <%= f.collection_select :account_type, AccountType.all, :id, :name, :selected => :account_type_id %>
   </div>
   <div class="actions">
     <%= f.submit %>

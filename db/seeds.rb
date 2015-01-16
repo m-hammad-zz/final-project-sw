@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# AccountType.create(name: 'Asset', lhs_attr: true, rhs_attr: false, plus_attr: true, minus_attr:false)
+AccountType.create(name: 'Liability', lhs_attr: true, rhs_attr: false, plus_attr: false, minus_attr:true)
+AccountType.create(name: 'Expense', lhs_attr: false, rhs_attr: true, plus_attr: false, minus_attr:true)
+AccountType.create(name: 'Equity', lhs_attr: false, rhs_attr: true, plus_attr: true, minus_attr:false)
+
+Account.create(name: 'Cash', account_type_id: 1)
+Account.create(name: 'Bank', account_type_id: 1)
+Account.create(name: 'Office Expenses', account_type_id: 3)
+Account.create(name: 'Capital', account_type_id: 4)
+

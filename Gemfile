@@ -19,8 +19,11 @@ gem "factory_girl_rails"
 gem 'capybara'
 gem 'simplecov'
 gem 'faker'
-gem 'cucumber-rails'
-gem 'cucumber-rails-training-wheels'
+
+group :test do
+  gem 'cucumber-rails'
+  gem 'cucumber-rails-training-wheels'
+end
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

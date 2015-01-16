@@ -5,6 +5,7 @@ class AccountsController < ApplicationController
   # GET /accounts.json
   def index
     @accounts = Account.all
+    # @accTypes = AccountType.all
   end
 
   # GET /accounts/1
